@@ -79,7 +79,7 @@ document.getElementById('divideButton').onclick = function(){
 Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
 Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
 <h2>subtraction</h2>
-<input value="1" id="">
+<input value="1" id="subtractbox1">
 minus
 <input value="2" id="subtractbox2">
 <input type="button" value="equals" id="subtractbutton">
@@ -88,7 +88,7 @@ minus
 document.getElementById('subtractbutton').onclick = function(){
   // Get the two numbers from the boxes.
   subtract1 = Number(document.getElementById('subtractbox1').value)
-  subtract2 = Number(document.getElementById('subtractBox2').value)
+  subtract2 = Number(document.getElementById('subtractbox2').value)
   // subtract the two numbers by each other and store them as result.
   result = subtract1 - subtract2
   document.getElementById('subtractResult').textContent = result

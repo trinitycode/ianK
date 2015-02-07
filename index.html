@@ -78,6 +78,22 @@ document.getElementById('divideButton').onclick = function(){
 <h2>Subtraction (Make this one by copying the addition code)</h2>
 Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
 Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
+<h2>Multiplication</h2>
+<input value="1" id="">
+times
+<input value="2" id="subtractbox2">
+<input type="button" value="equals" id="subtractbutton">
+<span id="subtractresult"></span>
+<script>
+document.getElementById('subtractbutton').onclick = function(){
+  // Get the two numbers from the boxes.
+  subtract1 = Number(document.getElementById('subtractbox1').value)
+  subtract2 = Number(document.getElementById('subtractBox2').value)
+  // Multiply the two numbers together. Star (shift+8) means multiply.
+  result = subtract1 - subtract2
+  document.getElementById('subtractResult').textContent = result
+}
+</script>
 
 
 
